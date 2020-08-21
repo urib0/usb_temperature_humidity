@@ -1,0 +1,2 @@
+# usb_temperature_humidity
+Mac, LinuxマシンにUSBで接続できて追加ドライバ不要で値を読める温湿度センサ
