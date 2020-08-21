@@ -1,0 +1,413 @@
+EESchema Schematic File Version 4
+LIBS:usb_temperature_humidity-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5F3F877C
+P 950 950
+F 0 "#PWR01" H 950 800 50  0001 C CNN
+F 1 "+3V3" H 965 1123 50  0000 C CNN
+F 2 "" H 950 950 50  0001 C CNN
+F 3 "" H 950 950 50  0001 C CNN
+	1    950  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F3F8A64
+P 1800 1150
+F 0 "#PWR04" H 1800 900 50  0001 C CNN
+F 1 "GND" H 1805 977 50  0000 C CNN
+F 2 "" H 1800 1150 50  0001 C CNN
+F 3 "" H 1800 1150 50  0001 C CNN
+	1    1800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F3F8DA2
+P 1350 950
+F 0 "#FLG01" H 1350 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1123 50  0000 C CNN
+F 2 "" H 1350 950 50  0001 C CNN
+F 3 "~" H 1350 950 50  0001 C CNN
+	1    1350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5F3F9525
+P 1800 950
+F 0 "#FLG02" H 1800 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1123 50  0000 C CNN
+F 2 "" H 1800 950 50  0001 C CNN
+F 3 "~" H 1800 950 50  0001 C CNN
+	1    1800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L SHT-31:SHT-31 U2
+U 1 1 5F3FADA2
+P 5550 2100
+F 0 "U2" H 5850 2915 50  0000 C CNN
+F 1 "SHT-31" H 5850 2824 50  0000 C CNN
+F 2 "SHT-31:SHT-31" H 6100 2800 50  0001 C CNN
+F 3 "" H 6100 2800 50  0001 C CNN
+	1    5550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5F4047C9
+P 1700 1900
+F 0 "#PWR03" H 1700 1750 50  0001 C CNN
+F 1 "+3V3" H 1715 2073 50  0000 C CNN
+F 2 "" H 1700 1900 50  0001 C CNN
+F 3 "" H 1700 1900 50  0001 C CNN
+	1    1700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F40565A
+P 1500 3200
+F 0 "#PWR02" H 1500 2950 50  0001 C CNN
+F 1 "GND" H 1505 3027 50  0000 C CNN
+F 2 "" H 1500 3200 50  0001 C CNN
+F 3 "" H 1500 3200 50  0001 C CNN
+	1    1500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5F405C41
+P 4300 3000
+F 0 "J11" H 4380 3042 50  0000 L CNN
+F 1 "Conn_01x01" H 4380 2951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 3000 50  0001 C CNN
+F 3 "~" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J14
+U 1 1 5F406D89
+P 4650 2850
+F 0 "J14" H 4730 2892 50  0000 L CNN
+F 1 "Conn_01x01" H 4730 2801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2850 50  0001 C CNN
+F 3 "~" H 4650 2850 50  0001 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5F40748E
+P 4300 2700
+F 0 "J10" H 4380 2742 50  0000 L CNN
+F 1 "Conn_01x01" H 4380 2651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 2700 50  0001 C CNN
+F 3 "~" H 4300 2700 50  0001 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 5F407774
+P 4650 2550
+F 0 "J13" H 4730 2592 50  0000 L CNN
+F 1 "Conn_01x01" H 4730 2501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2550 50  0001 C CNN
+F 3 "~" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5F407983
+P 4300 2400
+F 0 "J9" H 4380 2442 50  0000 L CNN
+F 1 "Conn_01x01" H 4380 2351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 2400 50  0001 C CNN
+F 3 "~" H 4300 2400 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5F407CF2
+P 4650 2250
+F 0 "J12" H 4730 2292 50  0000 L CNN
+F 1 "Conn_01x01" H 4730 2201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4650 2250 50  0001 C CNN
+F 3 "~" H 4650 2250 50  0001 C CNN
+	1    4650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5F40823F
+P 4300 2100
+F 0 "J8" H 4380 2142 50  0000 L CNN
+F 1 "Conn_01x01" H 4380 2051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 2100 50  0001 C CNN
+F 3 "~" H 4300 2100 50  0001 C CNN
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5F4088EC
+P 1200 3000
+F 0 "J7" H 1118 2775 50  0000 C CNN
+F 1 "Conn_01x01" H 1118 2866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1200 3000 50  0001 C CNN
+F 3 "~" H 1200 3000 50  0001 C CNN
+	1    1200 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5F40977D
+P 850 2850
+F 0 "J3" H 768 2625 50  0000 C CNN
+F 1 "Conn_01x01" H 768 2716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 850 2850 50  0001 C CNN
+F 3 "~" H 850 2850 50  0001 C CNN
+	1    850  2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5F40AB06
+P 1200 2700
+F 0 "J6" H 1118 2475 50  0000 C CNN
+F 1 "Conn_01x01" H 1118 2566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1200 2700 50  0001 C CNN
+F 3 "~" H 1200 2700 50  0001 C CNN
+	1    1200 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5F40AB0C
+P 850 2550
+F 0 "J2" H 768 2325 50  0000 C CNN
+F 1 "Conn_01x01" H 768 2416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 850 2550 50  0001 C CNN
+F 3 "~" H 850 2550 50  0001 C CNN
+	1    850  2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5F40B750
+P 1200 2400
+F 0 "J5" H 1118 2175 50  0000 C CNN
+F 1 "Conn_01x01" H 1118 2266 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1200 2400 50  0001 C CNN
+F 3 "~" H 1200 2400 50  0001 C CNN
+	1    1200 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5F40B756
+P 850 2250
+F 0 "J1" H 768 2025 50  0000 C CNN
+F 1 "Conn_01x01" H 768 2116 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 850 2250 50  0001 C CNN
+F 3 "~" H 850 2250 50  0001 C CNN
+	1    850  2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5F40BF8E
+P 1200 2100
+F 0 "J4" H 1118 1875 50  0000 C CNN
+F 1 "Conn_01x01" H 1118 1966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 1200 2100 50  0001 C CNN
+F 3 "~" H 1200 2100 50  0001 C CNN
+	1    1200 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR07
+U 1 1 5F40C82C
+P 5350 1300
+F 0 "#PWR07" H 5350 1150 50  0001 C CNN
+F 1 "+3V3" H 5365 1473 50  0000 C CNN
+F 2 "" H 5350 1300 50  0001 C CNN
+F 3 "" H 5350 1300 50  0001 C CNN
+	1    5350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5F40CEFE
+P 5350 2200
+F 0 "#PWR08" H 5350 1950 50  0001 C CNN
+F 1 "GND" H 5355 2027 50  0000 C CNN
+F 2 "" H 5350 2200 50  0001 C CNN
+F 3 "" H 5350 2200 50  0001 C CNN
+	1    5350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  950  950  1100
+Wire Wire Line
+	950  1100 1350 1100
+Wire Wire Line
+	1350 1100 1350 950 
+Wire Wire Line
+	1800 950  1800 1150
+Wire Wire Line
+	1400 2100 1850 2100
+Wire Wire Line
+	1850 2250 1050 2250
+Wire Wire Line
+	1400 2400 1850 2400
+Wire Wire Line
+	1850 2550 1050 2550
+Wire Wire Line
+	1400 2700 1700 2700
+Wire Wire Line
+	1850 2850 1500 2850
+Wire Wire Line
+	1400 3000 1850 3000
+Wire Wire Line
+	1500 2850 1500 3200
+Connection ~ 1500 2850
+Wire Wire Line
+	1500 2850 1050 2850
+Wire Wire Line
+	1700 1900 1700 2700
+Connection ~ 1700 2700
+Wire Wire Line
+	1700 2700 1850 2700
+Wire Wire Line
+	3500 2100 4100 2100
+Wire Wire Line
+	4450 2250 3650 2250
+Connection ~ 3650 2250
+Wire Wire Line
+	3650 2250 3500 2250
+Wire Wire Line
+	3500 2400 3850 2400
+Connection ~ 3850 2400
+Wire Wire Line
+	3850 2400 4100 2400
+Wire Wire Line
+	4450 2550 3500 2550
+Wire Wire Line
+	3500 2700 4100 2700
+Wire Wire Line
+	4450 2850 3500 2850
+Wire Wire Line
+	3500 3000 4100 3000
+Wire Wire Line
+	3850 1200 3850 1300
+Wire Wire Line
+	3650 1050 3650 1150
+$Comp
+L Device:R R1
+U 1 1 5F3FC51D
+P 3650 1300
+F 0 "R1" H 3720 1346 50  0000 L CNN
+F 1 "R" H 3720 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3580 1300 50  0001 C CNN
+F 3 "~" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F3FC106
+P 3850 1450
+F 0 "R2" H 3920 1496 50  0000 L CNN
+F 1 "R" H 3920 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 1450 50  0001 C CNN
+F 3 "~" H 3850 1450 50  0001 C CNN
+	1    3850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5F3FBC68
+P 3650 1050
+F 0 "#PWR05" H 3650 900 50  0001 C CNN
+F 1 "+3V3" H 3665 1223 50  0000 C CNN
+F 2 "" H 3650 1050 50  0001 C CNN
+F 3 "" H 3650 1050 50  0001 C CNN
+	1    3650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5F3FB873
+P 3850 1200
+F 0 "#PWR06" H 3850 1050 50  0001 C CNN
+F 1 "+3V3" H 3865 1373 50  0000 C CNN
+F 2 "" H 3850 1200 50  0001 C CNN
+F 3 "" H 3850 1200 50  0001 C CNN
+	1    3850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Seeeduino_XIAO:SeeeduinoXIAO U1
+U 1 1 5F3F9CB8
+P 2650 2550
+F 0 "U1" H 2625 1611 50  0000 C CNN
+F 1 "SeeeduinoXIAO" H 2625 1520 50  0000 C CNN
+F 2 "Seeeduino XIAO:Seeeduino XIAO-MOUDLE14P-2.54-21X17.8MM" H 2300 2750 50  0001 C CNN
+F 3 "" H 2300 2750 50  0001 C CNN
+	1    2650 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 1450 3650 1700
+Wire Wire Line
+	3850 1600 3850 1850
+Wire Wire Line
+	5450 1700 3650 1700
+Connection ~ 3650 1700
+Wire Wire Line
+	3650 1700 3650 2250
+Wire Wire Line
+	5450 1850 3850 1850
+Connection ~ 3850 1850
+Wire Wire Line
+	3850 1850 3850 2400
+Wire Wire Line
+	5450 2000 5350 2000
+Wire Wire Line
+	5350 2000 5350 2200
+Wire Wire Line
+	5450 1550 5350 1550
+Wire Wire Line
+	5350 1550 5350 1300
+NoConn ~ 6250 1550
+NoConn ~ 6250 1700
+NoConn ~ 6250 1850
+NoConn ~ 6250 2000
+NoConn ~ 2750 1700
+NoConn ~ 2550 1700
+NoConn ~ 2850 3450
+NoConn ~ 2700 3450
+NoConn ~ 2550 3450
+NoConn ~ 2400 3450
+$EndSCHEMATC
