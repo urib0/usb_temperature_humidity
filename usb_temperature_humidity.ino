@@ -27,7 +27,8 @@ void loop() {
   Serial.print(";hum=");
   Serial.print(ui_hum, DEC);
   Serial.print(";status=");
-  Serial.println(STATUS_OK);
+  Serial.print(STATUS_OK);
+  Serial.print("\n");
 
   delay( 1000 );
 }
