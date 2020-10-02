@@ -1,5 +1,7 @@
 #define SHT30_ADDR 0x44
 
+#define STATUS_OK 0
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -7,7 +9,6 @@ void setup() {
     ; // wait for serial port to connect
   }
   delay(1000);
-  Serial.println("SHT30 start");
   
   sht30_init( SHT30_ADDR );
   
@@ -21,10 +22,13 @@ void loop() {
 
   sht30_get_th( &ui_temp, &ui_hum );
 
-  Serial.print("temp:");
-  Serial.println(ui_temp, DEC);
-  Serial.print("hum:");
-  Serial.println(ui_hum, DEC);
+  Serial.print("temp=");
+  Serial.print(ui_temp, DEC);
+  Serial.print(";hum=");
+  Serial.print(ui_hum, DEC);
+  Serial.print(";status=");
+  Serial.print(STATUS_OK);
+  Serial.print("\n");
 
   delay( 1000 );
 }
