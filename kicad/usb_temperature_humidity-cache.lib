@@ -1,23 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x01
-#
-DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*
-$ENDFPLIST
-DRAW
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -50 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -82,6 +65,25 @@ P 2 0 1 0 -60 10 65 90 N
 X A 1 200 100 100 L 50 50 1 1 P
 X B 2 -200 0 100 R 50 50 1 1 P
 X C 3 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# kicad_mylib_PinHeader_XIAO
+#
+DEF kicad_mylib_PinHeader_XIAO U 0 40 Y Y 1 F N
+F0 "U" 50 1250 50 H V C CNN
+F1 "kicad_mylib_PinHeader_XIAO" 50 1200 50 H V C CNN
+F2 "" 50 1250 50 H I C CNN
+F3 "" 50 1250 50 H I C CNN
+DRAW
+S 0 1150 100 0 0 1 0 N
+X ~ 1 -100 150 100 R 50 50 1 1 I
+X ~ 2 -100 300 100 R 50 50 1 1 I
+X ~ 3 -100 450 100 R 50 50 1 1 I
+X ~ 4 -100 600 100 R 50 50 1 1 I
+X ~ 5 -100 750 100 R 50 50 1 1 I
+X ~ 6 -100 900 100 R 50 50 1 1 I
+X ~ 7 -100 1050 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
