@@ -28,17 +28,6 @@ $EndComp
 Wire Wire Line
 	900  1050 900  1200
 $Comp
-L power:+3V3 #PWR03
-U 1 1 5F4047C9
-P 2350 3400
-F 0 "#PWR03" H 2350 3250 50  0001 C CNN
-F 1 "+3V3" H 2365 3573 50  0000 C CNN
-F 2 "" H 2350 3400 50  0001 C CNN
-F 3 "" H 2350 3400 50  0001 C CNN
-	1    2350 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5F40565A
 P 2350 4700
@@ -75,23 +64,23 @@ Wire Wire Line
 $Comp
 L Device:R R4
 U 1 1 5F3FC51D
-P 4250 2800
-F 0 "R4" H 4320 2846 50  0000 L CNN
-F 1 "R" H 4320 2755 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4180 2800 50  0001 C CNN
-F 3 "~" H 4250 2800 50  0001 C CNN
-	1    4250 2800
+P 4250 1900
+F 0 "R4" H 4320 1946 50  0000 L CNN
+F 1 "R" H 4320 1855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4180 1900 50  0001 C CNN
+F 3 "~" H 4250 1900 50  0001 C CNN
+	1    4250 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 5F3FC106
-P 4450 2950
-F 0 "R3" H 4520 2996 50  0000 L CNN
-F 1 "R" H 4520 2905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 2950 50  0001 C CNN
-F 3 "~" H 4450 2950 50  0001 C CNN
-	1    4450 2950
+P 4450 2050
+F 0 "R3" H 4520 2096 50  0000 L CNN
+F 1 "R" H 4520 2005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4380 2050 50  0001 C CNN
+F 3 "~" H 4450 2050 50  0001 C CNN
+	1    4450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -106,17 +95,9 @@ F 3 "" H 2900 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4250 2950 4250 3200
-Wire Wire Line
-	4450 3100 4450 3350
-Wire Wire Line
 	6050 3200 4250 3200
-Connection ~ 4250 3200
-Wire Wire Line
-	4250 3200 4250 3750
 Wire Wire Line
 	6050 3350 4450 3350
-Connection ~ 4450 3350
 Wire Wire Line
 	4450 3350 4450 3900
 Wire Wire Line
@@ -125,42 +106,12 @@ Wire Wire Line
 	5950 3500 5950 3700
 Wire Wire Line
 	6050 3050 5950 3050
-Wire Wire Line
-	5950 3050 5950 2800
-NoConn ~ 6850 3050
-NoConn ~ 6850 3200
 NoConn ~ 3350 3200
 NoConn ~ 3150 3200
 NoConn ~ 3450 4950
 NoConn ~ 3300 4950
 NoConn ~ 3150 4950
 NoConn ~ 3000 4950
-$Comp
-L power:+3V3 #PWR06
-U 1 1 5F3FB873
-P 4450 2700
-F 0 "#PWR06" H 4450 2550 50  0001 C CNN
-F 1 "+3V3" H 4465 2873 50  0000 C CNN
-F 2 "" H 4450 2700 50  0001 C CNN
-F 3 "" H 4450 2700 50  0001 C CNN
-	1    4450 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR05
-U 1 1 5F3FBC68
-P 4250 2550
-F 0 "#PWR05" H 4250 2400 50  0001 C CNN
-F 1 "+3V3" H 4265 2723 50  0000 C CNN
-F 2 "" H 4250 2550 50  0001 C CNN
-F 3 "" H 4250 2550 50  0001 C CNN
-	1    4250 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2550 4250 2650
-Wire Wire Line
-	4450 2700 4450 2800
 Wire Wire Line
 	1750 1050 1750 1250
 Wire Wire Line
@@ -170,12 +121,12 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR07
 U 1 1 5F40C82C
-P 5950 2800
-F 0 "#PWR07" H 5950 2650 50  0001 C CNN
-F 1 "+3V3" H 5965 2973 50  0000 C CNN
-F 2 "" H 5950 2800 50  0001 C CNN
-F 3 "" H 5950 2800 50  0001 C CNN
-	1    5950 2800
+P 5950 2950
+F 0 "#PWR07" H 5950 2800 50  0001 C CNN
+F 1 "+3V3" H 5965 3123 50  0000 C CNN
+F 2 "" H 5950 2950 50  0001 C CNN
+F 3 "" H 5950 2950 50  0001 C CNN
+	1    5950 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -324,17 +275,6 @@ Wire Wire Line
 NoConn ~ 1450 2300
 NoConn ~ 900  2250
 $Comp
-L kicad_mylib:SHT-31 U2
-U 1 1 5FB3D220
-P 6150 3600
-F 0 "U2" H 6450 4415 50  0000 C CNN
-F 1 "SHT-31" H 6450 4324 50  0000 C CNN
-F 2 "kicad_mylib:SHT-31" H 6700 4300 50  0001 C CNN
-F 3 "" H 6700 4300 50  0001 C CNN
-	1    6150 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR013
 U 1 1 5FB42E84
 P 6950 3700
@@ -357,12 +297,12 @@ Wire Wire Line
 $Comp
 L kicad_mylib:PinHeader_XIAO U4
 U 1 1 5FB5C045
-P 4700 4650
-F 0 "U4" H 4828 5271 50  0000 L CNN
-F 1 "PinHeader_XIAO" H 4828 5180 50  0000 L CNN
-F 2 "kicad_mylib:PinHeader_XIAO" H 4750 5900 50  0001 C CNN
-F 3 "" H 4750 5900 50  0001 C CNN
-	1    4700 4650
+P 5050 4650
+F 0 "U4" H 5178 5271 50  0000 L CNN
+F 1 "PinHeader_XIAO" H 5178 5180 50  0000 L CNN
+F 2 "kicad_mylib:PinHeader_XIAO" H 5100 5900 50  0001 C CNN
+F 3 "" H 5100 5900 50  0001 C CNN
+	1    5050 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -376,22 +316,8 @@ F 3 "" H 1850 4700 50  0001 C CNN
 	1    1800 3450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4600 4500 4100 4500
-Wire Wire Line
-	4600 4350 4100 4350
-Wire Wire Line
-	4600 4200 4100 4200
-Wire Wire Line
-	4100 4050 4600 4050
-Wire Wire Line
-	4600 3900 4450 3900
 Connection ~ 4450 3900
-Wire Wire Line
-	4600 3750 4250 3750
 Connection ~ 4250 3750
-Wire Wire Line
-	4100 3600 4600 3600
 Wire Wire Line
 	2150 3600 1900 3600
 Connection ~ 2150 3600
@@ -410,4 +336,178 @@ Wire Wire Line
 Connection ~ 2350 4350
 Wire Wire Line
 	1900 4500 2450 4500
+Wire Wire Line
+	4250 3750 4950 3750
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5FB82EA1
+P 5400 2550
+F 0 "JP1" H 5400 2755 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5400 2664 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5400 2550 50  0001 C CNN
+F 3 "~" H 5400 2550 50  0001 C CNN
+	1    5400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5FB83C68
+P 5550 2700
+F 0 "JP2" H 5550 2905 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5550 2814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5550 2700 50  0001 C CNN
+F 3 "~" H 5550 2700 50  0001 C CNN
+	1    5550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2950 5950 3050
+Wire Wire Line
+	4100 4200 4850 4200
+$Comp
+L Device:R R6
+U 1 1 5FB80CC5
+P 4850 2300
+F 0 "R6" H 4920 2346 50  0000 L CNN
+F 1 "R" H 4920 2255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 2300 50  0001 C CNN
+F 3 "~" H 4850 2300 50  0001 C CNN
+	1    4850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FB808DA
+P 4650 2150
+F 0 "R5" H 4720 2196 50  0000 L CNN
+F 1 "R" H 4720 2105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4580 2150 50  0001 C CNN
+F 3 "~" H 4650 2150 50  0001 C CNN
+	1    4650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2700 7100 2700
+Wire Wire Line
+	6950 2550 5550 2550
+Wire Wire Line
+	4450 3900 4950 3900
+Connection ~ 4850 4200
+Wire Wire Line
+	4850 4200 4950 4200
+$Comp
+L kicad_mylib:SHT-31 U2
+U 1 1 5FB3D220
+P 6150 3600
+F 0 "U2" H 6450 4415 50  0000 C CNN
+F 1 "SHT-31" H 6450 4324 50  0000 C CNN
+F 2 "kicad_mylib:SHT-31" H 6700 4300 50  0001 C CNN
+F 3 "" H 6700 4300 50  0001 C CNN
+	1    6150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3200 6850 3200
+Wire Wire Line
+	6950 3050 6850 3050
+Wire Wire Line
+	4250 1550 4250 1750
+Wire Wire Line
+	4450 1700 4450 1900
+$Comp
+L power:+3V3 #PWR015
+U 1 1 5FB81892
+P 4850 1950
+F 0 "#PWR015" H 4850 1800 50  0001 C CNN
+F 1 "+3V3" H 4865 2123 50  0000 C CNN
+F 2 "" H 4850 1950 50  0001 C CNN
+F 3 "" H 4850 1950 50  0001 C CNN
+	1    4850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR014
+U 1 1 5FB81400
+P 4650 1800
+F 0 "#PWR014" H 4650 1650 50  0001 C CNN
+F 1 "+3V3" H 4665 1973 50  0000 C CNN
+F 2 "" H 4650 1800 50  0001 C CNN
+F 3 "" H 4650 1800 50  0001 C CNN
+	1    4650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5F3FB873
+P 4450 1700
+F 0 "#PWR06" H 4450 1550 50  0001 C CNN
+F 1 "+3V3" H 4465 1873 50  0000 C CNN
+F 2 "" H 4450 1700 50  0001 C CNN
+F 3 "" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5F3FBC68
+P 4250 1550
+F 0 "#PWR05" H 4250 1400 50  0001 C CNN
+F 1 "+3V3" H 4265 1723 50  0000 C CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2550 6950 3050
+Wire Wire Line
+	7100 2700 7100 3200
+Wire Wire Line
+	4100 4050 4650 4050
+Wire Wire Line
+	4100 3600 4950 3600
+Wire Wire Line
+	4650 2300 4650 2550
+Connection ~ 4650 4050
+Wire Wire Line
+	4650 4050 4950 4050
+Wire Wire Line
+	5250 2550 4650 2550
+Connection ~ 4650 2550
+Wire Wire Line
+	4450 2200 4450 3350
+Connection ~ 4450 3350
+Wire Wire Line
+	4250 2050 4250 3200
+Connection ~ 4250 3200
+Wire Wire Line
+	4250 3200 4250 3750
+Wire Wire Line
+	4850 1950 4850 2150
+Wire Wire Line
+	4650 1800 4650 2000
+Wire Wire Line
+	4100 4350 4950 4350
+Wire Wire Line
+	4100 4500 4950 4500
+Wire Wire Line
+	4650 2550 4650 4050
+Wire Wire Line
+	5400 2700 4850 2700
+Wire Wire Line
+	4850 2450 4850 2700
+Connection ~ 4850 2700
+Wire Wire Line
+	4850 2700 4850 4200
+$Comp
+L power:+3V3 #PWR03
+U 1 1 5F4047C9
+P 2350 3400
+F 0 "#PWR03" H 2350 3250 50  0001 C CNN
+F 1 "+3V3" H 2365 3573 50  0000 C CNN
+F 2 "" H 2350 3400 50  0001 C CNN
+F 3 "" H 2350 3400 50  0001 C CNN
+	1    2350 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
