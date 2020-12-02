@@ -41,12 +41,12 @@ $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5F40CEFE
-P 5950 4450
-F 0 "#PWR08" H 5950 4200 50  0001 C CNN
-F 1 "GND" H 5955 4277 50  0000 C CNN
-F 2 "" H 5950 4450 50  0001 C CNN
-F 3 "" H 5950 4450 50  0001 C CNN
-	1    5950 4450
+P 5950 4100
+F 0 "#PWR08" H 5950 3850 50  0001 C CNN
+F 1 "GND" H 5955 3927 50  0000 C CNN
+F 2 "" H 5950 4100 50  0001 C CNN
+F 3 "" H 5950 4100 50  0001 C CNN
+	1    5950 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -496,43 +496,13 @@ F 3 "" H 2350 3400 50  0001 C CNN
 	1    2350 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L kicad_mylib:SHT-31 U5
-U 1 1 5FDA7FE4
-P 7800 3600
-F 0 "U5" H 8100 4415 50  0000 C CNN
-F 1 "SHT-31" H 8100 4324 50  0000 C CNN
-F 2 "kicad_mylib:SHT-31_aliexpress" H 8350 4300 50  0001 C CNN
-F 3 "" H 8350 4300 50  0001 C CNN
-	1    7800 3600
-	1    0    0    -1  
-$EndComp
-Connection ~ 5950 4300
 Wire Wire Line
-	5950 4300 5950 4450
-Wire Wire Line
-	7700 3500 7300 3500
-Wire Wire Line
-	7300 3500 7300 4300
-Wire Wire Line
-	7700 3200 7500 3200
-Wire Wire Line
-	7500 4100 5750 4100
-Wire Wire Line
-	5750 4100 5750 3200
-Wire Wire Line
-	7500 3200 7500 4100
+	5750 3900 5750 3200
 Connection ~ 5750 3200
 Wire Wire Line
 	5750 3200 4250 3200
 Wire Wire Line
-	7700 3350 7400 3350
-Wire Wire Line
-	7400 3350 7400 4200
-Wire Wire Line
-	7400 4200 5850 4200
-Wire Wire Line
-	5850 4200 5850 3350
+	5850 4000 5850 3350
 Connection ~ 5850 3350
 Wire Wire Line
 	5850 3350 4450 3350
@@ -551,18 +521,46 @@ Wire Wire Line
 	7600 3050 7600 2900
 Wire Wire Line
 	7600 3050 7700 3050
-NoConn ~ 8500 3500
-NoConn ~ 8500 3350
-NoConn ~ 8500 3200
-NoConn ~ 8500 3050
-Wire Wire Line
-	7300 4300 5950 4300
 Wire Wire Line
 	6950 3500 6950 3700
 Wire Wire Line
 	6950 3700 5950 3700
 Connection ~ 6950 3500
 Connection ~ 5950 3700
+$Comp
+L kicad_mylib:SHT-31_aliexpress U5
+U 1 1 5FDDCCF5
+P 7800 3600
+F 0 "U5" H 8100 4415 50  0000 C CNN
+F 1 "SHT-31_aliexpress" H 8100 4324 50  0000 C CNN
+F 2 "kicad_mylib:SHT-31_aliexpress" H 8350 4300 50  0001 C CNN
+F 3 "" H 8350 4300 50  0001 C CNN
+	1    7800 3600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5950 3700 5950 4300
+	5950 3700 5950 3800
+Wire Wire Line
+	7600 3200 7700 3200
+Wire Wire Line
+	7600 3200 7600 3800
+Wire Wire Line
+	7600 3800 5950 3800
+Connection ~ 5950 3800
+Wire Wire Line
+	5950 3800 5950 4100
+Wire Wire Line
+	5850 4000 7400 4000
+Wire Wire Line
+	7400 4000 7400 3500
+Wire Wire Line
+	7400 3500 7700 3500
+Wire Wire Line
+	5750 3900 7500 3900
+Wire Wire Line
+	7500 3900 7500 3350
+Wire Wire Line
+	7500 3350 7700 3350
+NoConn ~ 8500 3500
+NoConn ~ 8500 3350
 $EndSCHEMATC
