@@ -30,6 +30,8 @@ void loop()
   Serial.print(ui_hum, DEC);
   Serial.print(";status=");
   Serial.print(STATUS_OK);
+  Serial.print(";version=");
+  Serial.print(VERSION);
   Serial.print("\n");
 
   delay(1000);
