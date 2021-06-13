@@ -2,10 +2,10 @@
 
   (general
     (thickness 1.6)
-    (drawings 26)
+    (drawings 25)
     (tracks 105)
     (zones 0)
-    (modules 15)
+    (modules 16)
     (nets 27)
   )
 
@@ -151,6 +151,19 @@
     (add_net "Net-(U1-Pad7)")
     (add_net "Net-(U5-Pad5)")
     (add_net "Net-(U5-Pad6)")
+  )
+
+  (module kicad_mylib:signature_koino (layer F.Cu) (tedit 60898730) (tstamp 60C71872)
+    (at 6.35 -44.45)
+    (fp_text reference ~ (at 2.54 -3.81) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value signature_koino (at 6.35 -5.58) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "Twitter:@koino_mfg  USB-TEMPERATURE-HUMIDITY" (at 0 -1.27) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)) (justify left))
+    )
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5FB8322A)
@@ -1561,9 +1574,6 @@
   )
   (gr_text 10k (at 36.83 -25.24) (layer F.SilkS) (tstamp 5FC787B5)
     (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (gr_text "2020 REALGLOBE Inc rev 0.3" (at 34.29 -44.45) (layer F.SilkS)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_line (start 62.23 -33) (end 72 -33) (layer Edge.Cuts) (width 0.12) (tstamp 5FB81F4C))
   (gr_line (start 62.23 -14) (end 72 -14) (layer Edge.Cuts) (width 0.12) (tstamp 5FB80A7F))
