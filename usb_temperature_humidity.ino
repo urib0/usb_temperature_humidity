@@ -2,6 +2,8 @@
 
 #define STATUS_OK 0
 
+#define VERSION "1.00"
+
 void setup()
 {
   // put your setup code here, to run once:
